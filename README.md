@@ -1,6 +1,6 @@
-# Quiz 3 Practice
+# Quiz_5_Practice
 
-This repository contains a Django backend and a React frontend for the Quiz 3 Practice project.
+This repository contains a Django backend and a React frontend for the Quiz_5_Practice project.
 
 ## Structure
 - `backend/` — Django project (with `base` app)
