@@ -4,10 +4,13 @@ from django.http import JsonResponse, Http404
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from .models import *
 from django.contrib.auth.models import User
 from django.forms.models import model_to_dict
-from .products import products as static_products
+from .models import *
+from . import products as products_module
+
+# Use the products list from the module to avoid potential import-time name errors
+static_products = products_module.products
 
 from .serializers import ProductSerializer
 from rest_framework import serializers
